@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EP Pure Monitor</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="ep-logo">
+      <img src="img/logo.jpg" alt="">
+    </div>
+
+    <div class="title">
+      System Monitor
+    </div>
+
+    <div class="container">
+      <div class="calendar">
+        <div class="month"></div>
+        <div class="day"></div>
+      </div>
+
+      <div class="col-xs-4 cell-container cell-flow">
+        <i class="fa fa-refresh fa-5x"></i>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar"></div>
+        </div>
+        <div class="status">No Flow</div>
+        <div class="container-data flow-data">
+          <span class="data-span"></span><span class="unit-span">V</span>
+        </div>
+      </div>
+      <div class="col-xs-4 cell-container cell-ozone">
+        <i class="fa fa-warning fa-5x"></i>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar"></div>
+        </div>
+        <div class="status">Moderate</div>
+        <div class="container-data ozone-data">
+          <span class="data-span"></span><span class="unit-span">ppb</span>
+        </div>
+      </div>
+      <div class="col-xs-4 cell-container">
+        <div class="cell-temp">
+          <i class="fa fa-tachometer fa-5x"></i>
+          <div class="container-data temp-data">
+            <span class="data-span"></span><span class="unit-span">°C</span>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="cell-humid">
+          <i class="fa fa-tint fa-5x"></i>
+          <div class="container-data humid-data">
+            <span class="data-span"></span><span class="unit-span">% RH</span>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
